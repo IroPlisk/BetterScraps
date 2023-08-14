@@ -1,5 +1,5 @@
 // questa è una classe che ho fatto per la vecchia mod, si può benissimo cambiare ed editare
-package BetterScraps.items;
+/* package BetterScraps.items;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
@@ -9,14 +9,12 @@ import net.minecraft.world.World;
 
 import java.util.Random;
 
-import static BetterScraps.items.Item.RandomNumber.rndm;
 
-
-public class Item extends net.minecraft.item.Item {
+public class ItemRandomOLD extends net.minecraft.item.Item {
 
     private Random random;
 
-    public Item(int par1) {
+    public ItemRandomOLD(int par1) {
         super(-256);
         this.setTextureFile("/BetterScraps/textures/Items.png");
         this.setIconIndex(0);
@@ -45,4 +43,4 @@ public class Item extends net.minecraft.item.Item {
 }
 
 
-        
+*/
