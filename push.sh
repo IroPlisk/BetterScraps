@@ -1,5 +1,5 @@
 #!/bin/bash
 git add .
-git commit -m "$1"
+git commit -m "modificati nomi e cartelle"
 git push origin master
 

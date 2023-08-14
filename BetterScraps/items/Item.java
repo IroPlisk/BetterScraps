@@ -1,24 +1,24 @@
-package Ball8.items;
+// questa è una classe che ho fatto per la vecchia mod, si può benissimo cambiare ed editare
+package BetterScraps.items;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 
 
 import java.util.Random;
 
-import static Ball8.items.Item8Ball.RandomNumber.rndm;
+import static BetterScraps.items.Item.RandomNumber.rndm;
 
 
-public class Item8Ball extends Item {
+public class Item extends net.minecraft.item.Item {
 
     private Random random;
 
-    public Item8Ball(int par1) {
+    public Item(int par1) {
         super(-256);
-        this.setTextureFile("/Ball8/textures/Items.png");
+        this.setTextureFile("/BetterScraps/textures/Items.png");
         this.setIconIndex(0);
         this.setCreativeTab(CreativeTabs.tabRedstone);
         this.setItemName("8 Ball");
