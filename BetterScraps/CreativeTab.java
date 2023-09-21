@@ -10,7 +10,7 @@ import net.minecraft.item.ItemStack;
 public class CreativeTab extends CreativeTabs {
 
     private String name;
-    public static CreativeTabs Ball8 = new CreativeTab(CreativeTabs.getNextID(), "BetterScraps");
+    public static CreativeTabs BetterScraps = new CreativeTab(CreativeTabs.getNextID(), "BetterScraps");
 
     public CreativeTab(int par1, String par2Str) {
         super(par1, par2Str);
@@ -24,7 +24,7 @@ public class CreativeTab extends CreativeTabs {
 
     @SideOnly(Side.CLIENT)
     public ItemStack getIconItemStack() {
-        if (this.name == Ball8.getTabLabel()) {
+        if (this.name == BetterScraps.getTabLabel()) {
             return new ItemStack(Items.ball8);
         }
         return null;
