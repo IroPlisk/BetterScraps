@@ -1,6 +1,9 @@
 package BetterScraps;
-// import Ball8.main.handlers.CraftingHandler; <--da aggiungere ricette
 
+import java.io.File;
+
+import BetterScraps.Blocks.NuovoRecycler;
+import BetterScraps.Recipes.RicetteScrapbox;
 import BetterScraps.items.Items;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.Init;
@@ -11,15 +14,12 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraft.src.BaseMod;
 
-@Mod(name = "BetterScraps", version = "0.0.1", modid = "BetterScraps")
+@Mod(name = "Enhanced Geology", version = "1.0", modid = "BetterScraps", dependencies = "required-after:IC2;")
 public class Main extends BaseMod {
-
-    //@SidedProxy(clientSide="betterelectrics.main.proxies.ClientProxy", serverSide="betterelectrics.main.proxies.ServerProxy")
-    //public static CommonProxy proxy;
 
     @Override
     public String getVersion() {
-        return "0.0.1";
+        return "1.0";
     }
 
     @Override
@@ -30,23 +30,21 @@ public class Main extends BaseMod {
 
     @PreInit
     public void preInit(FMLPreInitializationEvent event) {
+        System.out.println("[BetterScraps] Sesso Meduso :] --TheMineGamer31");
     }
 
 
     @Init
     public void init(FMLInitializationEvent event) {
-        //proxy.init(event);
-        //Blocks.initBlocks();
-        //Blocks.registerBlocks();
-        //Blocks.registerLanguages();
+        NuovoRecycler.InizializzaStiBlocchi();
+        NuovoRecycler.RegistraStiBlocchi();
+        NuovoRecycler.ParlaComeMangi();
         Items.initItems();
         Items.registerLanguages();
-        //TileEntities.registerTileEntities();
     }
 
     @PostInit
     public void postInit(FMLPostInitializationEvent event) {
-        //proxy.postInit(event);
-        //CraftingHandler.AddCraftings();
+        RicetteScrapbox.AggiungiCrafting();
     }
 }

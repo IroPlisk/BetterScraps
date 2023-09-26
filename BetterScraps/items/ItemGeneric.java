@@ -27,7 +27,7 @@ public class ItemGeneric extends Item {
         super(id - 256);
         this.setTextureFile("/BetterScraps/textures/Items.png");
         this.setIconIndex(textureId);
-        this.setCreativeTab(CreativeTab.tabMisc);
+        this.setCreativeTab(CreativeTab.BetterScraps);
         this.setItemName(itemName);
         this.setMaxStackSize(maxStackSize);
         this.toolTip = toolTip;

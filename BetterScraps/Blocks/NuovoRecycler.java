@@ -2,44 +2,31 @@ package BetterScraps.Blocks;
 
 import BetterScraps.CreativeTab;
 import com.sun.org.apache.xpath.internal.objects.XNull;
+import cpw.mods.fml.common.registry.GameRegistry;
+import cpw.mods.fml.common.registry.LanguageRegistry;
 import net.minecraft.block.BlockContainer;
 import net.minecraft.block.Block;
+import net.minecraft.block.material.Material;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.IInventory;
+import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 
-@Override
-public class NuovoRecycler extends TileEntity implements IInventory {
+public class NuovoRecycler {
+    public static Block nrecycler;
 
-        int getSizeInventory();
-            return 0;
-        /**
-         * Returns the stack in slot i
-         */
-        ItemStack getStackInSlot(int var1);
-            return null;
+    public static void InizializzaStiBlocchi() {
+        nrecycler = new NRecycler(148); // questo poi da cambiare in base agli ID liberi, da chiedere a Lego11 (credo)
+    }
 
+    public static void RegistraStiBlocchi() {
+        GameRegistry.registerBlock(nrecycler, ItemBlock.class, nrecycler.getBlockName());
+    }
 
-        ItemStack decrStackSize(int var1, int var2);
-            return null;
-
-        ItemStack getStackInSlotOnClosing(int var1);
-            return null;
-
-        void setInventorySlotContents(int var1, ItemStack var2);
-            return null;
-        String getInvName();
-            return null;
-
-        int getInventoryStackLimit();
-            return 0;
-
-        boolean isUseableByPlayer(EntityPlayer var1);
-            return false;
-
-        void openChest();
-
-        void closeChest();
+    public static void ParlaComeMangi() {
+        LanguageRegistry.addName(new ItemStack(nrecycler), "Advanced Recycler");
     }
 }
+
+

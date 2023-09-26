@@ -9,16 +9,16 @@ public class Items {
 
     public static void initItems() {
         /* scrap metallico */
-        scrapm = new ItemGeneric(15010, 1, "scrapmet", 64, "");
+        scrapm = new ItemGeneric(15010, 0, "scrapmet", 64, "");
         /* scrap terroso */
         scrapt = new ItemGeneric(15011, 1, "scrapter", 64, "");
         /* scrap gemma */
-        scrapg = new ItemGeneric(15012, 1, "scrapgem", 64, "");
+        scrapg = new ItemGeneric(15012, 2, "scrapgem", 64, "");
         /* scrap radioattivo */
-        scrapr = new ItemGeneric(15013, 1, "scraprad", 64, "");
+        scrapr = new ItemGeneric(15013, 3, "scraprad", 64, "");
         /* scrap organico */
-        scrapo = new ItemGeneric(15014, 1, "scraporg", 64, "");
-        ball8 = new ItemGeneric(15008, 1, "burro", 1, "errore");
+        scrapo = new ItemGeneric(15014, 4, "scraporg", 64, "");
+        ball8 = new ItemGeneric(15008, 10, "burro", 1, "errore");
         //  cocco = new ItemRandomOLD(15009);
     }
 
