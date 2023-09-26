@@ -25,7 +25,7 @@ public class CreativeTab extends CreativeTabs {
     @SideOnly(Side.CLIENT)
     public ItemStack getIconItemStack() {
         if (this.name == BetterScraps.getTabLabel()) {
-            return new ItemStack(Items.ball8);
+            return new ItemStack(Items.scrapm);
         }
         return null;
     }
