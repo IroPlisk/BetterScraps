@@ -1,19 +1,14 @@
 package BetterScraps.Blocks;
 
-import BetterScraps.CreativeTab;
-import com.sun.org.apache.xpath.internal.objects.XNull;
+import BetterScraps.Entity.TileEntityNuovoRecycler;
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
-import net.minecraft.block.BlockContainer;
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
-import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
 
-public class NuovoRecycler {
+public class Blocchi {
     public static Block nrecycler;
 
     public static void InizializzaStiBlocchi() {
@@ -27,6 +22,8 @@ public class NuovoRecycler {
     public static void ParlaComeMangi() {
         LanguageRegistry.addName(new ItemStack(nrecycler), "Advanced Recycler");
     }
+
+
 }
 
 

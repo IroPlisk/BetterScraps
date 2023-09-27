@@ -1,5 +1,5 @@
 #!/bin/bash
 git add .
-git commit -m "Aggiunte le texture e item degli scrap e scrap box relativi"
+git commit -m "BUILD DA REVISIONE NON FUNZIONALE - Aggiunte tutte le recipe per gli scrap box"
 git push origin master
 

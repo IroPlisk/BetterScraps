@@ -1,13 +1,15 @@
 package BetterScraps.Entity;
 
+import BetterScraps.Blocks.Blocchi;
+import BetterScraps.Blocks.NRecycler;
+
 import ic2.api.Direction;
 import ic2.api.energy.tile.IEnergySink;
 import ic2.api.IWrenchable;
+import net.minecraft.block.Block;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.tileentity.TileEntity;
-
-import java.util.Random;
 
 public class TileEntityNuovoRecycler extends TileEntity implements IEnergySink, IWrenchable {
 
@@ -29,27 +31,27 @@ public class TileEntityNuovoRecycler extends TileEntity implements IEnergySink, 
 
     @Override
     public boolean wrenchCanRemove(EntityPlayer entityPlayer) {
-        return false;
+        return true;
     }
 
     @Override
     public float getWrenchDropRate() {
-        return 0;
+        return 1.0f;
     }
 
     @Override
     public ItemStack getWrenchDrop(EntityPlayer entityPlayer) {
-        return null;
+        return new ItemStack(Blocchi.nrecycler);
     }
 
     @Override
     public boolean acceptsEnergyFrom(TileEntity emitter, Direction direction) {
-        return false;
+        return true;
     }
 
     @Override
     public int demandsEnergy() {
-        return 0;
+        return 32;
     }
 
     @Override
@@ -59,11 +61,14 @@ public class TileEntityNuovoRecycler extends TileEntity implements IEnergySink, 
 
     @Override
     public int getMaxSafeInput() {
+
         return 32;
     }
 
     @Override
     public boolean isAddedToEnergyNet() {
+
         return false;
     }
+
 }

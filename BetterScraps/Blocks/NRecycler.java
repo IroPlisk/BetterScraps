@@ -1,12 +1,15 @@
 package BetterScraps.Blocks;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
+import BetterScraps.Entity.TileEntityNuovoRecycler;
 import BetterScraps.CreativeTab;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.World;
 
 public class NRecycler extends Block {
+
+
     public NRecycler(int id) {
         super(id, Material.iron);
         this.setBlockName("Riciclatore");
@@ -15,6 +18,12 @@ public class NRecycler extends Block {
         this.setHardness(1.7F);
         this.setResistance(15.0F);
 
+
+    }
+
+    @Override
+    public TileEntity createTileEntity(World world, int metadata) {
+        return new TileEntityNuovoRecycler();
     }
 }
 

@@ -1,8 +1,6 @@
 package BetterScraps;
 
-import java.io.File;
-
-import BetterScraps.Blocks.NuovoRecycler;
+import BetterScraps.Blocks.Blocchi;
 import BetterScraps.Recipes.RicetteScrapbox;
 import BetterScraps.items.Items;
 import cpw.mods.fml.common.Mod;
@@ -36,9 +34,9 @@ public class Main extends BaseMod {
 
     @Init
     public void init(FMLInitializationEvent event) {
-        NuovoRecycler.InizializzaStiBlocchi();
-        NuovoRecycler.RegistraStiBlocchi();
-        NuovoRecycler.ParlaComeMangi();
+        Blocchi.InizializzaStiBlocchi();
+        Blocchi.RegistraStiBlocchi();
+        Blocchi.ParlaComeMangi();
         Items.initItems();
         Items.registerLanguages();
     }
