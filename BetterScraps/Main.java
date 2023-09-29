@@ -10,17 +10,22 @@ import cpw.mods.fml.common.Mod.PreInit;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import net.minecraft.src.BaseMod;
 
-@Mod(name = "Enhanced Geology", version = "1.0", modid = "BetterScraps", dependencies = "required-after:IC2;")
-public class Main extends BaseMod {
 
-    @Override
+//@Mod(name = "Enhanced Geology", version = "1.0", modid = "BetterScraps", dependencies = "required-after:IC2;")
+
+@Mod(modid = "69", name = "BetterScraps", version = "1.0", dependencies = "required-after:IC2;")
+public class Main {
+
+    @Mod.Instance("69") // Replace "modid" with your actual mod ID
+    public static Main instance;
+
+
     public String getVersion() {
         return "1.0";
     }
 
-    @Override
+
     public void load() {
 
 
@@ -45,4 +50,6 @@ public class Main extends BaseMod {
     public void postInit(FMLPostInitializationEvent event) {
         RicetteScrapbox.AggiungiCrafting();
     }
+
+
 }
