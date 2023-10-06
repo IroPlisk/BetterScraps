@@ -1,13 +1,16 @@
 package BetterScraps.items;
 
+import BetterScraps.items.ScrapBoxes.ScrapBoxGemma;
+import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.common.registry.LanguageRegistry;
 
 public class Items {
     // elementari
-    public static net.minecraft.item.Item scrapm, scrapt, scrapg, scrapr, scrapo, scrapbm, scrapbt, scrapbg, scrapbr, scrapbo;
-
+    public static net.minecraft.item.Item scrapm, scrapt, scrapg, scrapr, scrapo, scrapbm, scrapbt, scrapbr, scrapbo, scrapbg;
 
     public static void initItems() {
+        //scrap box gemma
+        scrapbg = new ScrapBoxGemma(15016);
         // scrap metallico
         scrapm = new ItemGeneric(15010, 0, "scrapmet", 64, "");
         // scrap terroso
@@ -22,12 +25,11 @@ public class Items {
         scrapbm = new ItemGeneric(15015, 16, "scrapboxmet", 64, "");
         // scrap box terroso
         scrapbt = new ItemGeneric(15016, 17, "scrapboxter", 64, "");
-        // scrap box gemma
-        scrapbg = new ItemGeneric(15017, 18, "scrapboxmgem", 64, "");
         // scrap box radioattivo
         scrapbr = new ItemGeneric(15018, 19, "scrapboxrad", 64, "Non sono 3.6, sono 15 mila Rontgen");
         // scrap box organico
         scrapbo = new ItemGeneric(15019, 20, "scrapboxorg", 64, "");
+        GameRegistry.registerItem(scrapbg, "sbg");
     }
 
     public static void registerLanguages() {

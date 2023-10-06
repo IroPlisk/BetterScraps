@@ -1,5 +1,5 @@
 #!/bin/bash
 git add .
-git commit -m "BUILD DA REVISIONE NON FUNZIONALE - Aggiunte alcune GUI (rotte) e ora il recycler tocca i cavi IC2"
+git commit -m "BUILD DA REVISIONE NON FUNZIONALE - aggihnte le scrap box con le loro funzionalità, da collegarle all'item e fixare la texture"
 git push origin master
 
