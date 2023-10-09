@@ -4,6 +4,5 @@ Mod che punta al migliorare il Recycler base della IC2 rendendolo più utile ed 
 
 TODO:
 
-- Implementazione giusta del blocco con la API IC2 (TileEntity)
+- Ricette degli scrap nel recycler
 - Texture e GUI del recycler
-- Funzionalità degli scrap box effettivi

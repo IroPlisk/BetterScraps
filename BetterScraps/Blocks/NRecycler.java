@@ -17,7 +17,7 @@ public class NRecycler extends BlockContainer {
     public NRecycler(int id) {
         super(id, Material.iron);
         this.setBlockName("Riciclatore");
-        this.setTextureFile("/enhancedgeology/textures/rocce.png");
+        this.setTextureFile("/BetterScraps/textures/furnace_front_off.png");
         this.setCreativeTab(CreativeTab.BetterScraps);
         this.setHardness(1.7F);
         this.setResistance(15.0F);
